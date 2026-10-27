@@ -3,12 +3,12 @@ package org.example;
 import java.util.Scanner;
 
 class Student {
-    public static int studentId;
-    public static String name;
-    public static int age;
-    public static double subject1Marks;
-    public static double subject2Marks;
-    public static double subject3Marks;
+    int studentId;
+    String name;
+    int age;
+    double subject1Marks;
+    double subject2Marks;
+    double subject3Marks;
 
     Student(int studentId, String name, int age,
             double subject1Marks, double subject2Marks, double subject3Marks) {
@@ -20,7 +20,7 @@ class Student {
         this.subject3Marks = subject3Marks;
     }
 
-    public static void displayStudent() {
+    void displayStudent() {
         System.out.printf("%-8d%-14s%-8d%-9.0f%-9.0f%-9.0f\n",
                 studentId, name, age, subject1Marks, subject2Marks, subject3Marks);
     }
